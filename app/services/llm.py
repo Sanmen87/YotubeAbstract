@@ -14,14 +14,12 @@ def _ask_model(prompt: str) -> str:
         response = _client.responses.create(
             model=settings.openai_model,
             input=prompt,
-            temperature=0.2,
         )
         output_text = getattr(response, "output_text", "") or ""
         return output_text.strip()
 
     completion = _client.chat.completions.create(
         model=settings.openai_model,
-        temperature=0.2,
         messages=[{"role": "user", "content": prompt}],
     )
     content = completion.choices[0].message.content if completion.choices else ""

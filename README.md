@@ -42,7 +42,7 @@ Use `.env` (copy from `.env.example`):
 ```env
 TELEGRAM_BOT_TOKEN=
 OPENAI_API_KEY=
-OPENAI_MODEL=gpt-4o-mini
+OPENAI_MODEL=gpt-5
 DATABASE_URL=postgresql+psycopg://postgres:postgres@postgres:5432/app
 REDIS_URL=redis://redis:6379/0
 MAX_VIDEO_MINUTES=60
@@ -182,7 +182,7 @@ Production-ready MVP каркас для Telegram-бота:
 ```env
 TELEGRAM_BOT_TOKEN=
 OPENAI_API_KEY=
-OPENAI_MODEL=gpt-4o-mini
+OPENAI_MODEL=gpt-5
 DATABASE_URL=postgresql+psycopg://postgres:postgres@postgres:5432/app
 REDIS_URL=redis://redis:6379/0
 MAX_VIDEO_MINUTES=60
