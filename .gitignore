@@ -47,3 +47,6 @@ Thumbs.db
 build/
 dist/
 *.egg-info/
+
+# Sensitive local files
+data/cookies.txt
