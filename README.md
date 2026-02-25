@@ -92,8 +92,9 @@ Persistent model cache:
 5. Temp files removed from `/tmp/youtube_lmm/<task_id>`
 
 ## Limits and Behavior
-- Max video duration enforced by `MAX_VIDEO_MINUTES` (default 60)
-- Input language can be RU / EN / AR, but summary and outline are always generated in Russian
+- Max video duration enforced by `MAX_VIDEO_MINUTES` (default 90)
+- Input language can be RU / EN / AR, but summary and outline are always generated in Russian, 
+  if you want the result to be in English, you need to change the promt in the llm.py file to yours.  File in the services folder
 - Basic retries configured for download/transcribe/summarize tasks
 - Bot access is restricted to IDs from `ALLOWED_TELEGRAM_USER_IDS` (comma-separated Telegram user IDs)
 - Idempotency:
