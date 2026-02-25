@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project runtime artifacts
+/tmp/
+*.log
+
+# Local data and caches
+# Keep placeholder only
+/data/hf_cache/*
+!/data/hf_cache/.gitkeep
+
+# Docker
+*.pid
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
